@@ -3,12 +3,12 @@ footer{
  * 	border: none;
  * 	padding: 0; 
  *	position: relative;*/
-	bottom: O;
+	bottom: 0;
 	width: 100%; /*Largeur du bandeau = largeur de la fenêtre*/
 	background-color: #0094d2; /*Couleur de fond */
 	text-align: center; /*Alignement des éléments */
-	min-height: 100px; /*Hauteur du cadre minimum*/
-	max-height: 200px; /*Hauteur de cadre maximum*/
+	min-height: 220px; /*Hauteur du cadre minimum*/
+	max-height: 350px; /*Hauteur de cadre maximum*/
 	font-size: 15px; /*Taille de police*/
 	color: #fff; /*Couleur du texte (blanc)*/
 	clear: both; /*N'accepte pas d'objet d'un côté ou de l'autre (ex : menu ou filtre)*/
@@ -17,25 +17,25 @@ footer{
 .footleft{
 	position: absolute; /*caler sur le bord gauche*/
 	left: 5px;
-	width: 17%; /*largeur de l'élément*/
+	width: 35%; /*largeur de l'élément*/
 }
 .footmidle{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 120px;
+	padding-right: 10px;
 	margin: auto;
-	width: 60%;
+	padding-top: 2px;
+	width: 42%;
 }
 .footright{
 	position: absolute; /*caler sur le bord droite*/
-	right: 65px;
+	right: 5px;
 	width: 15%; /*largeur de l'élément*/
 }
 
 .logoUB{
-	float: right;
-	bottom: 0;
-	width: 6%;
+	width: 70%;
 }
+
 a {
 	color: white;
 

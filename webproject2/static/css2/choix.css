@@ -1,8 +1,8 @@
 .choix{
 	/*float:left;*/
 	position: relative;
-	width: 25%;
-	max-width: 200px; /*Largeur du block*/
+	width: 25%; /*Largeur du block*/
+	max-width: 200px;
 	text-align: left; /*Alignement des éléments */
 	min-height: 300px; /*Hauteur du cadre minimum*/
 	font-size: 15px; /*Taille de police*/
@@ -18,15 +18,6 @@ ul{
 }
 
 ul > li { 
-/*    border: solid;
-    border-color: black;
-    border-width: 1px;*/
-    color: black;
-    padding: 8px 8px;
-    text-align: left;
-    display: block;
-}
-li > a { 
 /*    border: solid;
     border-color: black;
     border-width: 1px;*/
