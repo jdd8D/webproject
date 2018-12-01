@@ -14,7 +14,7 @@
             <li><a href="{% url 'needs' %}?nid={{ need.id }}&did={{ difficulty.id }}">{{ need.name }}</a></li>
             {% endfor %}               
         </ul>
-    </br>  
+    <br />  
     {% endif %}
     
     {% if not need and technotype_list %}
@@ -34,17 +34,17 @@
 <div class="choix">
 	<h3>Type de besoin</h3>
 	<form action="/action_page.php">
-		<input type="radio" name="need" value="besoin_1">Besoin 1<br>
-		<input type="radio" name="need" value="besoin_2">Besoin 2<br>
-		<input type="radio" name="need" value="">Besoin 3<br>
-		<input type="radio" name="need" value="">Besoin 4<br>
-	<br/>
+		<input type="radio" name="need" value="besoin_1">Besoin 1<br />
+		<input type="radio" name="need" value="besoin_2">Besoin 2<br />
+		<input type="radio" name="need" value="">Besoin 3<br />
+		<input type="radio" name="need" value="">Besoin 4<br />
+	<br />
 	<h3>Type de technologie</h3>
-		<input type="radio" name="technotype" value="type_1">Type 1<br>
-		<input type="radio" name="technotype" value="type_2">Type 2<br>
-		<input type="radio" name="technotype" value="">Type 3<br>
-		<input type="radio" name="technotype" value="">Type 4<br>
-	<br/>
+		<input type="radio" name="technotype" value="type_1">Type 1<br />
+		<input type="radio" name="technotype" value="type_2">Type 2<br />
+		<input type="radio" name="technotype" value="">Type 3<br />
+		<input type="radio" name="technotype" value="">Type 4<br />
+	<br />
 	<input name="bla" type="submit">
 </div>
 {% endcomment %}

@@ -69,23 +69,23 @@
 	<div class="boutons">
     	{% for diff in difficulty_list %}
         {% csrf_token %}
-		<a style="background-color:couleur" alt="name of difficulty" href="{% url 'difficulties' %}?did={{ diff.id }}"><i class="fas fa-home"></i></br>{{ diff.name }}</a>
+		<a style="background-color:couleur" alt="name of difficulty" href="{% url 'difficulties' %}?did={{ diff.id }}"><i class="fas fa-home"></i><br />{{ diff.name }}</a>
         {% endfor %}
     </div>
     
     
     {% comment %}
-		<a style="background-color:red" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i></br>Manger</a>
-		<a style="background-color:green" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i></br>Nom difficulté</a>
-		<a style="background-color:blue" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i></br>Nom difficulté</a>
-		<a style="background-color:pink" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i></br>Manger</a>
+		<a style="background-color:red" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
+		<a style="background-color:green" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
+		<a style="background-color:blue" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
+		<a style="background-color:pink" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
 	</div>
 	<div class="boutons">
-		<a style="background-color:purple" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i></br>Manger</a>
-		<a style="background-color:green" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i></br>Nom difficulté</a>
-		<a style="background-color:orange" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i></br>Nom difficulté</a>
-		<a style="background-color:black" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i></br>Manger</a>
-		<a style="background-color:couleur" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i></br>Nom difficulté</a>
+		<a style="background-color:purple" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
+		<a style="background-color:green" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
+		<a style="background-color:orange" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
+		<a style="background-color:black" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
+		<a style="background-color:couleur" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
 	</div>
 	{% endcomment %}
 </div>
@@ -99,10 +99,9 @@
 <!--footer-->
 <footer>
 	<div>
-		<img class="logoUB" alt="logo de l'université de Bordeaux" src="{% static 'images/logoBdx.png' %}">
-		<div class="footleft"><h3>Contact</h3><p>adresse<br />mail</p></div>
-		<div class="footright"><h3>Suivez-nous</h3><div> <a href="url..."><i class="fab fa-facebook" style="font-size:24px;"></i></a>  <a href="url..."><i class="fab fa-twitter-square" style="font-size:24px;"></i></a>  <a href="url..."><i class="fab fa-google-plus-square" style="font-size:24px;"></i></a> </div></div>
-		<div class="footmidle"><h3>Mentions légales</h3><p>ici le texte<br>correspondant<br>aux mentions légales</p></div>
+		<div class="footleft"><h3>Contact</h3><p>Université de Bordeaux<br />UF Mathématiques et Interactions<br />Bât A33 - 1er étage - Bureau 113<br />351 cours de la Libération<br />33405 TALENCE<br /><br /><strong>Mail :</strong> bf-master-sc@u-bordeaux.fr<br /><br /><strong>Tel : </strong>05 40 00 24 01</p></div>
+		<div class="footright"><h3>Suivez-nous</h3><div> <a href="https://www.facebook.com/univbordeaux"><i class="fab fa-facebook" style="font-size:24px;"></i></a>  <a href="https://twitter.com/univbordeaux"><i class="fab fa-twitter-square" style="font-size:24px;"></i></a>  <a href=""><i class="fab fa-google-plus-square" style="font-size:24px;"></i></a> </div><br /><a href="https://www.u-bordeaux.fr/"><img class="logoUB" alt="logo de l'université de Bordeaux" src="logoBdx.png"></a></div>
+		<div class="footmidle"><h3>Mentions légales</h3><p>Conformément aux dispositions de l’article 6 III-1 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, le présent site est la propriété de l'université de Bordeaux<br /><br /><strong>Conception et Gestion du site: </strong><br />Les étudiants du master de Sciences Cognitives</p></div>
 	</div>
 </footer>
 </body>

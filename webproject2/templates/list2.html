@@ -3,15 +3,15 @@
 {% block content_block %}  
 <div class="techno">
     {% if technotype and need %}
-    	<h5>Accueil > Difficulté:{{ difficulty.name }}→ Besoin:{{ need.name }}→ Type:{{ technotype.name }}</h5>
+    	<h5 id="fil">Accueil > Difficulté:{{ difficulty.name }}→ Besoin:{{ need.name }}→ Type:{{ technotype.name }}</h5>
 	{% elif technotype %}
-        <h5>Accueil > Difficulté:{{ difficulty.name }}→ Type:{{ technotype.name }}</h5>
+        <h5 id="fil">Accueil > Difficulté:{{ difficulty.name }}→ Type:{{ technotype.name }}</h5>
 	{% elif need %}
-        <h5>Accueil > Difficulté:{{ difficulty.name }}→ Besoin:{{ need.name }}</h5>
+        <h5 id="fil">Accueil > Difficulté:{{ difficulty.name }}→ Besoin:{{ need.name }}</h5>
     {% elif difficulty %}
-		<h5>Accueil > Difficulté:{{ difficulty.name }}</h5>      
+		<h5 id="fil">Accueil > Difficulté:{{ difficulty.name }}</h5>      
     {% elif q %}
-        <h5><b> {{ n_results }} </b> résultat(s) pour : <b> {{ q }} </b>. </h5>  
+        <h5 id="fil"><b> {{ n_results }} </b> résultat(s) pour : <b> {{ q }} </b>. </h5>  
     {% endif %}
     	
 	{% if techno_list %}	       
