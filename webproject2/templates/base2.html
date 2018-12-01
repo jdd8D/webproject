@@ -65,27 +65,31 @@
 
 <div class="diff">
 	<h5><a href="{% url 'index' %}">Accueil</a></h5>
-	<h2>J'ai une difficulté :</h2>
+	<h2>J'ai des difficultés :</h2>
 	<div class="boutons">
     	{% for diff in difficulty_list %}
         {% csrf_token %}
-		<a style="background-color:couleur" alt="name of difficulty" href="{% url 'difficulties' %}?did={{ diff.id }}"><i class="fas fa-home"></i><br />{{ diff.name }}</a>
+        <!-- j'ai essayé de corriger dirrectement mais j'ai sûrement fais des erreurs, vérifie s'il n'y a pas un problème de majuscule sur le nom des icones-->
+		<a style="background-color:couleur" alt="{{ diff.name }}" href="{% url 'difficulties' %}?did={{ diff.id }}"><img style="filter: invert(1);" src="Icone/{{ diff.name }}.png"><br />{{ diff.name }}</a>
         {% endfor %}
     </div>
     
     
     {% comment %}
-		<a style="background-color:red" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
-		<a style="background-color:green" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
-		<a style="background-color:blue" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
-		<a style="background-color:pink" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
+	<h2>J'ai des difficultés :</h2>
+	<div class="boutons">
+		<a style="background-color:blue" id="" alt="motrices" href="nom_page"><img style="filter: invert(1);" src="Icone/motrices.png"><br />motrices</a>
+		<a style="background-color:limegreen" id="" alt="dans mes sens" href="nom_page"><img style="filter: invert(1);" src="Icone/sens.png"><br />dans mes sens</a>
+		<a style="background-color:tan" id="" alt="de mémoire" href="nom_page"><img style="filter: invert(1);" src="Icone/Mémoire.png"><br />de mémoire</a>
+		<a style="background-color:maroon" id="" alt="d'attention" href="nom_page"><img style="filter: invert(1);" src="Icone/Attention.png"><br />d'attention</a>
+		<a style="background-color:green" id="" alt="de sommeil" href="nom_page"><img style="filter: invert(1);" src="Icone/Sommeil.png"><br />de sommeil</a>
 	</div>
 	<div class="boutons">
-		<a style="background-color:purple" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
-		<a style="background-color:green" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
-		<a style="background-color:orange" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
-		<a style="background-color:black" id="" alt="à manger" href="nom_page"><i class="fas fa-utensils"></i><br />Manger</a>
-		<a style="background-color:couleur" id="" alt="nom difficulté" href="nom_page"><i class="fas fa-home"></i><br />Nom difficulté</a>
+		<a style="background-color:orange" id="" alt="Planification" href="nom_page"><img style="filter: invert(1);" src="Icone/Planification.png"><br />de planification d'organisation</a>
+		<a style="background-color:red" id="" alt="de communication" href="nom_page"><img style="filter: invert(1);" src="Icone/Communication.png"><br />de communication</a>
+		<a style="background-color:darkblue" id="" alt="Apprentissage" href="nom_page"><img style="filter: invert(1);" src="Icone/Apprentissage.png"><br />d'apprentissage</a>
+		<a style="background-color:purple" id="" alt="Sécurité" href="nom_page"><img style="filter: invert(1);" src="Icone/Sécurité.png"><br />à me sentir en sécurité</a>
+		<a style="background-color:hotpink" id="" alt="Sexe" href="nom_page"><img style="filter: invert(1);" src="Icone/Sexe.png"><br />dans ma sexualité</a>
 	</div>
 	{% endcomment %}
 </div>
